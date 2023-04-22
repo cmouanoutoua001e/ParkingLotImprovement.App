@@ -1,41 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:ParkingLotImprovement.Model"
              x:Class="ParkingLotImprovement.App.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+    <ScrollView Margin="20">
+        <StackLayout>
+            
+            <Label
+                x:Name="LotID"
+                FontSize="24"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
 
             <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+                x:Name="IsFull"
+                FontSize="24"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+                x:Name="TotalStalls"
+                FontSize="24"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="OpenStalls"
+                FontSize="24"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            x:Name="RefreshBtn"
+            Text="Click to refresh data"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="OnRefreshClicked"
+            HorizontalOptions="Center"/>
 
-        </VerticalStackLayout>
+        </StackLayout>
     </ScrollView>
 
 </ContentPage>
+
+
+                

@@ -1,41 +1,41 @@
-﻿namespace ParkingLotImprovement.App;
+﻿using ParkingLotImprovement.Model;
+using System.Text.Json;
+
+namespace ParkingLotImprovement.App;
 
 public partial class MainPage : ContentPage
 {
-
-	public MainPage()
-	{
-		InitializeComponent();
-	}
-
+	ParkingDataModel pdm = new();
 	int count = 0;
 
-	private void OnCounterClicked(object sender, EventArgs e)
+    public MainPage()
+	{
+		InitializeComponent();
+		SetParkingData();
+	}
+
+	private void SetParkingData()
+	{
+		var Labels = pdm.UpdateParkingData();
+		
+		LotID.Text = Labels[0];
+		IsFull.Text = Labels[1];
+		TotalStalls.Text = Labels[2];
+		OpenStalls.Text = Labels[3];
+
+		/* SemanticScreenReader.Announce(LotID.Text);
+        SemanticScreenReader.Announce(IsFull.Text);
+        SemanticScreenReader.Announce(TotalStalls.Text);
+        SemanticScreenReader.Announce(OpenStalls.Text); */
+    }
+
+	private void OnRefreshClicked(object sender, EventArgs e)
 	{
 		count++;
-		string strCmdText = $"/C curl -o https://github.com/cmouanoutoua001e/dotNETMAUITutorial/raw/main/README.md";
-        System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-
-        // curl -O "C:\Users\muasn\OneDrive\Desktop\YEYE.txt" https://github.com/cmouanoutoua001e/dotNETMAUITutorial/raw/main/README.md
-
-        /*
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-
-		else if (count == 5)
-			CounterBtn.Text = "yeye";
-
-		else
+		SetParkingData();
+		if (count < 10)
 		{
-			if (count > 20)
-				count = 0;
-			CounterBtn.Text = $"Clicked {count} times";
-		}
-		*/
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+            LotID.Text = count.ToString();
+        }
+    }
 }
-
