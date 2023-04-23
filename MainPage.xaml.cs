@@ -11,7 +11,7 @@ public partial class MainPage : ContentPage
     public MainPage()
 	{
 		InitializeComponent();
-		SetParkingData();
+		//SetParkingData();
 	}
 
 	private void SetParkingData()
@@ -20,8 +20,8 @@ public partial class MainPage : ContentPage
 		
 		LotID.Text = Labels[0];
 		IsFull.Text = Labels[1];
-		TotalStalls.Text = Labels[2];
-		OpenStalls.Text = Labels[3];
+        OpenStalls.Text = Labels[2];
+        TotalStalls.Text = Labels[3];
 
 		/* SemanticScreenReader.Announce(LotID.Text);
         SemanticScreenReader.Announce(IsFull.Text);

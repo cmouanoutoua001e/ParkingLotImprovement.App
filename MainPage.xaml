@@ -6,37 +6,86 @@
 
     <ScrollView Margin="20">
         <StackLayout>
-            
-            <Label
-                x:Name="LotID"
-                FontSize="24"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
 
-            <Label
-                x:Name="IsFull"
-                FontSize="24"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center">
 
-            <Label
-                x:Name="TotalStalls"
-                FontSize="24"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
+                <Label
+                    Text="Parking Lot Name:"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+                
+                <Label
+                    x:Name="LotID"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+                
+            </HorizontalStackLayout>
 
-            <Label
-                x:Name="OpenStalls"
-                FontSize="24"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="Status:"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+                <Label
+                    x:Name="IsFull"
+                    FontSize="24"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="Open Stalls:"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+                <Label
+                    x:Name="OpenStalls"
+                    FontSize="24"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="Total Stalls:"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+                <Label
+                    x:Name="TotalStalls"
+                    FontSize="24"
+                    Text="{Binding TotalStalls}"
+                    BindingContext="model:ParkingDataModel"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+
+            </HorizontalStackLayout>
 
             <Button
-            x:Name="RefreshBtn"
-            Text="Click to refresh data"
-            SemanticProperties.Hint="Counts the number of times you click"
-            Clicked="OnRefreshClicked"
-            HorizontalOptions="Center"/>
+                x:Name="RefreshBtn"
+                Text="Refresh Data"
+                Clicked="OnRefreshClicked"
+                HorizontalOptions="Center"/>
 
         </StackLayout>
     </ScrollView>
