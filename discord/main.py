@@ -21,12 +21,12 @@ async def on_ready():
     
     # channels:
     general = bot.get_channel(1099948525892149280) #FIXME
-
+    beep = bot.get_channel(1099960596943863818)
 
     # Init Message
     now = datetime.datetime.now()
     dt_string = now.strftime(f"%d/%m/%Y %H:%M:%S")
-    await general.send(f"\n \n ** Run time: {dt_string} * \n \n")
+    await beep.send(f"\n \n ** Run time: {dt_string} * \n \n")
     
 """ UPDATE COMMAND """
 # 1. requests openCV data
