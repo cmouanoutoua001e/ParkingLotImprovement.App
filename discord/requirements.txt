@@ -1,0 +1,11 @@
+aiohttp @ file:///D:/bld/aiohttp_1676292894383/work
+aiosignal @ file:///home/conda/feedstock_root/build_artifacts/aiosignal_1667935791922/work
+async-timeout @ file:///home/conda/feedstock_root/build_artifacts/async-timeout_1640026696943/work
+attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1671632566681/work
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1661170624537/work
+discord.py @ file:///home/conda/feedstock_root/build_artifacts/discord.py_1677769774705/work
+frozenlist @ file:///D:/bld/frozenlist_1667935574203/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
+multidict @ file:///D:/bld/multidict_1672339617319/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1678559861143/work
+yarl @ file:///D:/bld/yarl_1672341181893/work
