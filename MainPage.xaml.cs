@@ -19,8 +19,8 @@ public partial class MainPage : ContentPage
 		
 		LotID.Text = Labels[0];
 		IsFull.Text = Labels[1];
-        OpenStalls.Text = Labels[2];
-        TotalStalls.Text = Labels[3];
+        TotalStalls.Text = Labels[2];
+        OpenStalls.Text = Labels[3];
     }
 
 	private void OnRefreshClicked(object sender, EventArgs e)

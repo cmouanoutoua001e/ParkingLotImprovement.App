@@ -34,8 +34,8 @@ public class ParkingDataModel : ParkingData
 
         labels[0] = "P" + LotID.ToString();
         labels[1] = (OpenStalls == 0) ? "Full" : "Not Full";
-        labels[2] = OpenStalls.ToString();
-        labels[3] = "(" + TotalStalls.ToString() + " Total Stalls)";
+        labels[2] = "(" + TotalStalls.ToString() + " Total Stalls)";
+        labels[3] = OpenStalls.ToString();
 
         return labels;
     }
