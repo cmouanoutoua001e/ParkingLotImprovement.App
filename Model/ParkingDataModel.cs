@@ -33,7 +33,7 @@ public class ParkingDataModel : ParkingData
         OpenStalls = newPd.OpenStalls;
 
         labels[0] = "P" + LotID.ToString();
-        labels[1] = (OpenStalls == 0) ? "Full" : "Not Full";
+        labels[1] = (OpenStalls == 0) ? "Full" : ((OpenStalls < (TotalStalls/4)) ? "Nearly Full": "Open");
         labels[2] = "(" + TotalStalls.ToString() + " Total Stalls)";
         labels[3] = OpenStalls.ToString();
 

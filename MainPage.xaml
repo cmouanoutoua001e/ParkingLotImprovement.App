@@ -64,7 +64,8 @@
                     BorderColor="Black"
                     CornerRadius="3"
                 
-                    WidthRequest="125" MaximumHeightRequest="50"
+                    Padding="0"
+                    WidthRequest="125" HeightRequest="40"
                     HorizontalOptions="Center" VerticalOptions="Center"/>
                 
                 <Frame
@@ -73,7 +74,8 @@
                     BorderColor="Black"
                     CornerRadius="3"
                     
-                    WidthRequest="125" MaximumHeightRequest="50"
+                    Padding="0"
+                    WidthRequest="125" HeightRequest="40"
                     HorizontalOptions="Center" VerticalOptions="Center"/>
                 
 
@@ -90,9 +92,12 @@
                     VerticalOptions="Center"/>
 
                 <Label
-                    x:Name="IsFull"
+                    x:Name="Status"
                     Grid.Row="1" Grid.Column="1"
-                    FontSize="Large"
+                    
+                    FontSize="Medium"
+                    FontAutoScalingEnabled="True"
+                    
                     VerticalOptions="Center"
                     HorizontalOptions="Center"/>
 
@@ -111,7 +116,10 @@
                 <Label
                     x:Name="OpenStalls"
                     Grid.Row="2" Grid.Column="1"
-                    FontSize="Large"
+                    
+                    FontSize="Medium"
+                    FontAutoScalingEnabled="True"
+                    
                     HorizontalOptions="Center"
                     VerticalOptions="Center"/>
 

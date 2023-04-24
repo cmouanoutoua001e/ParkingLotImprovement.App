@@ -18,7 +18,7 @@ public partial class MainPage : ContentPage
 		var Labels = pdm.UpdateParkingData();
 		
 		LotID.Text = Labels[0];
-		IsFull.Text = Labels[1];
+		Status.Text = Labels[1];
         TotalStalls.Text = Labels[2];
         OpenStalls.Text = Labels[3];
     }
