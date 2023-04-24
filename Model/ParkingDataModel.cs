@@ -6,7 +6,6 @@ public class ParkingData
 {
     // Public Variables
     public int LotID { get; set; }
-    public bool IsFull { get; set; }
     public int TotalStalls { get; set; }
     public int OpenStalls { get; set; }
 }
@@ -30,14 +29,13 @@ public class ParkingDataModel : ParkingData
         var newPd = JsonSerializer.Deserialize<ParkingData>(json);
 
         LotID = newPd.LotID;
-        IsFull = newPd.IsFull;
         TotalStalls = newPd.TotalStalls;
         OpenStalls = newPd.OpenStalls;
 
-        labels[0] = LotID.ToString();
-        labels[1] = IsFull ? "Full" : "Not Full";
+        labels[0] = "P" + LotID.ToString();
+        labels[1] = (OpenStalls == 0) ? "Full" : "Not Full";
         labels[2] = OpenStalls.ToString();
-        labels[3] = TotalStalls.ToString();
+        labels[3] = "(" + TotalStalls.ToString() + " Total Stalls)";
 
         return labels;
     }

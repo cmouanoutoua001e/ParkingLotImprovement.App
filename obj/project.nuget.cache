@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fZSpXYZn8PNhgJc4F+3K1kQtUszEAEqMsV48hXHSh1TYlwvr4/WN2ylORCAHDNn8WrF0t7MM7VaoVDlR7hgr1w==",
+  "dgSpecHash": "M+GOpnecUZK0C/wQgGY/asGKDw54sS8rhtGg/OTChWN+KIFDnwyOiLCUBaQlta4nIwmLCgBZ7fIi8g0CdBf/yQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\muasn\\Files\\4-Coding\\dotNET\\ParkingLotImprovement.App\\ParkingLotImprovement.App.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\muasn\\.nuget\\packages\\communitytoolkit.maui\\5.1.0\\communitytoolkit.maui.5.1.0.nupkg.sha512",
+    "C:\\Users\\muasn\\.nuget\\packages\\communitytoolkit.maui.core\\5.1.0\\communitytoolkit.maui.core.5.1.0.nupkg.sha512",
     "C:\\Users\\muasn\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\muasn\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\muasn\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
