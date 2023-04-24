@@ -23,12 +23,14 @@ wheels/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
+
+# JOHN PUT THIS HERE
+discord/hidden/
+
 .installed.cfg
 *.egg
 MANIFEST
 
-# JOHN PUT THIS HERE
-hidden/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
