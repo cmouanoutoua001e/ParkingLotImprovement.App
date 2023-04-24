@@ -1,6 +1,7 @@
 import discord  as d
 from discord.ext import commands
 import asyncio
+from hidden import key
 
 print('running')
 
