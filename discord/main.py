@@ -35,7 +35,7 @@ async def on_ready():
 
 @bot.command()
 async def update(ctx):
-    await ctx.send("Yay! This is the main function :D")
+    await ctx.send("Yay, daddy! This is the main function :D")
 
 """ BOT KEY """
 # key located in private folder
