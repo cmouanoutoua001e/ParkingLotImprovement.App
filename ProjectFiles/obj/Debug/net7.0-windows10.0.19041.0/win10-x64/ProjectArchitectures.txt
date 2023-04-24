@@ -1,0 +1,1 @@
+C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\ProjectFiles\ParkingLotImprovement.App.csproj;x64
