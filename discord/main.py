@@ -42,8 +42,6 @@ async def update(ctx):
     with open('images/queen.jpg', 'rb') as f:
         picture = discord.File(f)
         await ctx.send("Insert Photo of processed parking lot photo", file=picture)
-        
-    await ctx.send()
 
 """ BOT KEY """
 # key located in private folder
