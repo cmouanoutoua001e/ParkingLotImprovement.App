@@ -36,6 +36,14 @@ async def on_ready():
 @bot.command()
 async def update(ctx):
     await ctx.send("Yay! This is the main function :D")
+    
+    # Send image uwu
+    
+    with open('images/queen.jpg', 'rb') as f:
+        picture = discord.File(f)
+        await ctx.send("Insert Photo of processed parking lot photo", file=picture)
+        
+    await ctx.send()
 
 """ BOT KEY """
 # key located in private folder
