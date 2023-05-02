@@ -3,6 +3,7 @@ from discord.ext import commands
 import datetime
 from hidden import key
 from lib import func
+import time
 
 print('running')
 
@@ -36,9 +37,9 @@ async def on_ready():
 @bot.command()
 async def update(ctx):
     
-    data = [True, False, False, False, False, True, True, True, True, True, False, False, False, True, True, True, True]# FIXME
+    data = [False, False, False, False, True, True, True, False, False, False, True, True, True, True, False, True, True] # FIXME
     
-    func.draw_spaces(data, 'space.png')
+    func.draw_spaces(data, 'lib/images/parking_lot.png') # REPLACE DATA WITH NICK'S OUTPUT
     
     with open('space.png', 'rb') as f:
         picture = discord.File(f)
