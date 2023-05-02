@@ -39,7 +39,7 @@ async def update(ctx):
     
     # Send image uwu
     
-    with open('images/queen.jpg', 'rb') as f:
+    with open('lib/images/queen.jpg', 'rb') as f:
         picture = discord.File(f)
         await ctx.send("Insert Photo of processed parking lot photo", file=picture)
 
