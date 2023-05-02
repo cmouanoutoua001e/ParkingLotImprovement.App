@@ -3,9 +3,9 @@ import cv2
 
 """   MISC FUNCTIONS   """
 
-def draw_spaces(array):
+def draw_spaces(array, path):
     
-    image = cv2.imread('images/parking_lot.png')
+    image = cv2.imread(path)
     
     # TOP ROW
     for i in range(10):
@@ -16,9 +16,13 @@ def draw_spaces(array):
         j = i + 10          # array offset (to align with x_offset)
         edit_bot(image, i, array[j])
         
+    # EXPORT AND SAVE IMAGE        
+    
+    cv2.imwrite('space.png', image)
+
     # DEBUG
-    cv2.imshow("Wow", image)
-    cv2.waitKey(0)
+    # cv2.imshow("Wow", image)
+    # cv2.waitKey(0)
     
 def edit_top(image, index, is_open):
     
@@ -58,7 +62,7 @@ def edit_bot(image, index, is_open):
 
 def main():
     
-    data = [True, False, False, False, False, True, True, True, True, True, False, False, False, True, True, True, True]
+    data = [False, False, False, False, True, True, True, False, False, False, True, True, True, True, False, True, True]
     #df = pd.Dataframe(data, columns="availability")
 
     print("Running")

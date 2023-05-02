@@ -35,13 +35,15 @@ async def on_ready():
 
 @bot.command()
 async def update(ctx):
-    await ctx.send("Yay! This is the main function :D")
     
-    # Send image uwu
+    data = [True, False, False, False, False, True, True, True, True, True, False, False, False, True, True, True, True]# FIXME
     
-    with open('lib/images/queen.jpg', 'rb') as f:
+    func.draw_spaces(data, 'space.png')
+    
+    with open('space.png', 'rb') as f:
         picture = discord.File(f)
-        await ctx.send("Insert Photo of processed parking lot photo", file=picture)
+        await ctx.send("Engineering East Parking Lot: ", file=picture)
+        await ctx.send("Blue = OPEN \nRed = CLOSED")
 
 """ BOT KEY """
 # key located in private folder
