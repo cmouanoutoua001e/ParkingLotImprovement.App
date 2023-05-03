@@ -22,6 +22,8 @@ bot_channel = 1099960596943863818
 general_channel = 1099948525892149280
 park_channel = 1103156024967434350
 
+parking_lot_name = "Engineering West Parking Lot"
+
 """
 
     BOT EVENTS
@@ -32,6 +34,9 @@ park_channel = 1103156024967434350
 async def on_ready():
     
     print("Now we're cooking")
+    
+    # change status
+    await bot.change_presence(activity = discord.Activity(type = discord.ActivityType.watching, name = parking_lot_name))
     
     # channels:
     general = bot.get_channel(general_channel) #FIXME
@@ -96,8 +101,6 @@ async def talk(ctx):
 
 @tasks.loop(seconds=60)
 async def mainLoop():
-    
-    print("LOOPED")     #debug stuff
     
     park = bot.get_channel(park_channel)
     
