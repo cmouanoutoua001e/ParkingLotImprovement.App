@@ -15,6 +15,9 @@ intents.message_content = True
 bot = commands.Bot(command_prefix = '!', intents = intents)
 
 """ Global vars """
+
+data = [False, False, False, False, True, True, True, False, False, False, True, True, True, True, False, True, True] # FIXME
+
 @bot.event
 async def on_ready():
     
@@ -37,14 +40,24 @@ async def on_ready():
 @bot.command()
 async def update(ctx):
     
-    data = [False, False, False, False, True, True, True, False, False, False, True, True, True, True, False, True, True] # FIXME
-    
     func.draw_spaces(data, 'lib/images/parking_lot.png') # REPLACE DATA WITH NICK'S OUTPUT
     
     with open('space.png', 'rb') as f:
         picture = discord.File(f)
         await ctx.send("Engineering East Parking Lot: ", file=picture)
         await ctx.send("Blue = OPEN \nRed = CLOSED")
+        
+@bot.command()
+async def talk(ctx):
+    
+    total_closed = 0
+    for i in data:      # count total open
+        if (not i):
+            total_closed = total_closed + 1
+    
+    percentage_closed = int ( ( (total_closed) / (len(data)) ) * 100 )
+    
+    await ctx.send(f"Engineering West Parking Lot is {percentage_closed}% full", tts=True)
 
 """ BOT KEY """
 # key located in private folder
