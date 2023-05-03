@@ -15,7 +15,7 @@ public class ParkingDataModel : ParkingData
     // Internet Request Variables
     HttpClient httpClient = new();
     //string url = "https://drive.google.com/file/d/13gV3cvpUyISCspJunlihMcRM3vmwhmyi/view";
-    string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/main/Data/ParkingData.json";
+    string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/main/ParkingData/ParkingData.json";
 
     // Constructor
     public ParkingDataModel() {  }
@@ -33,7 +33,8 @@ public class ParkingDataModel : ParkingData
         OpenStalls = newPd.OpenStalls;
 
         labels[0] = "P" + LotID.ToString();
-        labels[1] = (OpenStalls == 0) ? "Full" : ((OpenStalls < (TotalStalls/4)) ? "Nearly Full": "Open");
+        float percent = ((float)TotalStalls - (float)OpenStalls) / (float)TotalStalls * 100;
+        labels[1] = percent.ToString("0") + "% Full";
         labels[2] = "(" + TotalStalls.ToString() + " Total Stalls)";
         labels[3] = OpenStalls.ToString();
 

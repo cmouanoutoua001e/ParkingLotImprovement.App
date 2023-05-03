@@ -139,7 +139,20 @@
                     Clicked="OnRefreshClicked"/>
 
             </Grid>
+
+            <StackLayout HeightRequest="25"/>
+
+            <Border
+                MaximumWidthRequest="300"
+                StrokeThickness="4"
+                Stroke="#0b244a"
+                >
+                
+                <Image Source="https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/blob/main/ParkingData/space.png?raw=true"/>
             
+            </Border>
+
+
         </StackLayout>
     </ScrollView>
 </ContentPage>
