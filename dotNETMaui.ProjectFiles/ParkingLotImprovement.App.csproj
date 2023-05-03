@@ -49,12 +49,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Maui" Version="5.1.0" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	  <AndroidResource Remove="Data\**" />
+	  <Compile Remove="Data\**" />
+	  <EmbeddedResource Remove="Data\**" />
+	  <MauiCss Remove="Data\**" />
+	  <MauiXaml Remove="Data\**" />
+	  <None Remove="Data\**" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Data\" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="5.1.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="System.Speech" Version="7.0.0" />
 	</ItemGroup>
 
 </Project>

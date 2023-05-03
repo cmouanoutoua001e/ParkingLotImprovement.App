@@ -143,12 +143,14 @@
             <StackLayout HeightRequest="25"/>
 
             <Border
-                MaximumWidthRequest="300"
+                Stroke="Black"
                 StrokeThickness="4"
-                Stroke="#0b244a"
+                WidthRequest="308"
                 >
                 
-                <Image Source="https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/blob/main/ParkingData/space.png?raw=true"/>
+                <Image 
+                    Source="https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/blob/main/ParkingData/space.png?raw=true"
+                    MaximumWidthRequest="300"/>
             
             </Border>
 

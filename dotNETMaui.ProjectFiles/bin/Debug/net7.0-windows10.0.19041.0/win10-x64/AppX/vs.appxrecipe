@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-03T04:25:24.961</Modified>
+      <Modified>2023-05-03T06:17:30.562</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-03T04:25:24.774</Modified>
+      <Modified>2023-05-03T06:17:30.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ParkingLotImprovement.App.runtimeconfig.json">
       <PackagePath>ParkingLotImprovement.App.runtimeconfig.json</PackagePath>
-      <Modified>2023-05-03T03:15:52.811</Modified>
+      <Modified>2023-05-03T05:30:35.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ParkingLotImprovement.App.dll">
       <PackagePath>ParkingLotImprovement.App.dll</PackagePath>
-      <Modified>2023-05-03T04:25:24.243</Modified>
+      <Modified>2023-05-03T06:17:29.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ParkingLotImprovement.App.exe</PackagePath>
-      <Modified>2023-05-03T04:25:24.243</Modified>
+      <Modified>2023-05-03T06:17:29.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\muasn\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -918,6 +918,10 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\muasn\.nuget\packages\system.speech\7.0.0\runtimes\win\lib\net7.0\System.Speech.dll">
+      <PackagePath>System.Speech.dll</PackagePath>
+      <Modified>2022-10-18T16:18:24.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\muasn\.nuget\packages\microsoft.graphics.win2d\1.0.4\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2022-10-04T20:41:34.000</Modified>
@@ -928,7 +932,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ParkingLotImprovement.App.deps.json">
       <PackagePath>ParkingLotImprovement.App.deps.json</PackagePath>
-      <Modified>2023-05-03T04:25:24.899</Modified>
+      <Modified>2023-05-03T06:17:30.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.81\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
