@@ -48,7 +48,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10"/>
                     <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="60"/>
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -65,7 +65,7 @@
                     CornerRadius="3"
                 
                     Padding="0"
-                    WidthRequest="135" HeightRequest="40"
+                    WidthRequest="125" HeightRequest="40"
                     HorizontalOptions="Center" VerticalOptions="Center"/>
                 
                 <Frame
@@ -75,7 +75,7 @@
                     CornerRadius="3"
                     
                     Padding="0"
-                    WidthRequest="135" HeightRequest="40"
+                    WidthRequest="125" HeightRequest="40"
                     HorizontalOptions="Center" VerticalOptions="Center"/>
                 
 
@@ -129,8 +129,9 @@
                     Grid.Row="3" Grid.Column="1"
                 
                     MaximumHeightRequest="35"
-                    Text="Refresh Data"
+                    Text="Refresh"
                     TextColor="White"
+                    
                     FontAttributes="Bold"
                     BackgroundColor="#a7122a"
                     HorizontalOptions="Center"

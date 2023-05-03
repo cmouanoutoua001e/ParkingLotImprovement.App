@@ -15,7 +15,8 @@ public class ParkingDataModel : ParkingData
     // Internet Request Variables
     HttpClient httpClient = new();
     //string url = "https://drive.google.com/file/d/13gV3cvpUyISCspJunlihMcRM3vmwhmyi/view";
-    string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/main/ParkingData/ParkingData.json";
+    //string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/main/ParkingData/ParkingData.json";
+    string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/dotNETMaui/ParkingData/ParkingData.json";
 
     // Constructor
     public ParkingDataModel() {  }

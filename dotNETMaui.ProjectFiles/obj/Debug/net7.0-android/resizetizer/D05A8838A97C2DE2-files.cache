@@ -1,4 +1,6 @@
 ﻿obj\Debug\net7.0-android\resizetizer\r\drawable\bulldog.jpg
+obj\Debug\net7.0-android\resizetizer\r\drawable\icon.jpg
+obj\Debug\net7.0-android\resizetizer\r\drawable\splash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\splash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
