@@ -1,11 +1,13 @@
 ﻿using ParkingLotImprovement.Model;
-using System.Text.Json;
+using ParkingLotImprovement.App.Service;
+using System.Speech.Synthesis;
 
 namespace ParkingLotImprovement.App;
 
 public partial class MainPage : ContentPage
 {
 	ParkingDataModel pdm = new();
+    ReadAloudModel ram = new();
 
     public MainPage()
 	{
@@ -21,7 +23,11 @@ public partial class MainPage : ContentPage
 		Status.Text = Labels[1];
         TotalStalls.Text = Labels[2];
         OpenStalls.Text = Labels[3];
+
+		ram.Set(Labels);
+		ram.ReadAloud();
     }
+
 
 	private void OnRefreshClicked(object sender, EventArgs e)
 	{
