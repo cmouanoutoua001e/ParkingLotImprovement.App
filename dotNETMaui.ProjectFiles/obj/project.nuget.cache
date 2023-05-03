@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lOYJYP1DYukGisZ7VGvIv4ZlPLsr3v9zCLFJgYSbcanWskWKTdvwWguQiZjYM0tFCd+dq2FW/MWuj93BTy6dsw==",
+  "dgSpecHash": "tVxBkk1H7P69nz154yYzsNFTAxsEUmRVlaJ5+DmlaZwnwKYIsT1As590EJZ4VuZkGgXQ1EYyfBv4eUMuNQPpjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\muasn\\Files\\4-Coding\\dotNET\\ParkingLotImprovement.App\\ProjectFiles\\ParkingLotImprovement.App.csproj",
+  "projectFilePath": "C:\\Users\\muasn\\Files\\4-Coding\\dotNET\\ParkingLotImprovement.App\\dotNETMaui.ProjectFiles\\ParkingLotImprovement.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muasn\\.nuget\\packages\\communitytoolkit.maui\\5.1.0\\communitytoolkit.maui.5.1.0.nupkg.sha512",
     "C:\\Users\\muasn\\.nuget\\packages\\communitytoolkit.maui.core\\5.1.0\\communitytoolkit.maui.core.5.1.0.nupkg.sha512",
