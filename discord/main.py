@@ -62,6 +62,9 @@ async def on_ready():
 
 @bot.command()
 async def update(ctx):
+<<<<<<< HEAD
+    await ctx.send("Yay, daddy! This is the main function :P")
+=======
     
     func.draw_spaces(data, 'lib/images/parking_lot.png') # REPLACE DATA WITH NICK'S OUTPUT
     
@@ -125,6 +128,7 @@ async def mainLoop():
     
     
     await park.send(f"Engineering West Parking Lot is {percentage_closed}% full", tts=True)
+>>>>>>> 66a67c3e171009957cfc0cdc53d724f1bef29bf2
 
 """ BOT KEY """
 # key located in private folder
