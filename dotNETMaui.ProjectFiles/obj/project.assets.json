@@ -25006,11 +25006,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muasn\\Files\\4-Coding\\dotNET\\ParkingLotImprovement.App\\ProjectFiles\\ParkingLotImprovement.App.csproj",
+      "projectUniqueName": "C:\\Users\\muasn\\Files\\4-Coding\\dotNET\\ParkingLotImprovement.App\\dotNETMaui.ProjectFiles\\ParkingLotImprovement.App.csproj",
       "projectName": "ParkingLotImprovement.App",
-      "projectPath": "C:\\Users\\muasn\\Files\\4-Coding\\dotNET\\ParkingLotImprovement.App\\ProjectFiles\\ParkingLotImprovement.App.csproj",
+      "projectPath": "C:\\Users\\muasn\\Files\\4-Coding\\dotNET\\ParkingLotImprovement.App\\dotNETMaui.ProjectFiles\\ParkingLotImprovement.App.csproj",
       "packagesPath": "C:\\Users\\muasn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muasn\\Files\\4-Coding\\dotNET\\ParkingLotImprovement.App\\ProjectFiles\\obj\\",
+      "outputPath": "C:\\Users\\muasn\\Files\\4-Coding\\dotNET\\ParkingLotImprovement.App\\dotNETMaui.ProjectFiles\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
