@@ -688,6 +688,7 @@ C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.Projec
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Speech.dll
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.dll
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.CSharp.dll
@@ -952,6 +953,8 @@ C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.Projec
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon.scale-100.jpg
+C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\splash.scale-100.png
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ParkingLotImprovement.App.AssemblyInfoInputs.cache
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ParkingLotImprovement.App.AssemblyInfo.cs
@@ -979,6 +982,3 @@ C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.Projec
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Speech.dll
-C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon.scale-100.jpg
-C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\splash.scale-100.png

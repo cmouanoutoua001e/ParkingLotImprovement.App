@@ -16,7 +16,25 @@
                 HeightRequest="50"
                 HorizontalOptions="Center">
 
-                <Label
+                <Picker x:Name="LotID"
+                        Title="Select a Parking Lot"/>
+
+                <!--Picker x:Name="LotID"
+                        Title="Select a Parking Lot">
+                    <Picker.ItemsSource>
+                        <x:Array x:Name="LotIDList" Type="{x:Type x:String}">
+                            <x:String>Baboon</x:String>
+                            <x:String>Capuchin Monkey</x:String>
+                            <x:String>Blue Monkey</x:String>
+                            <x:String>Squirrel Monkey</x:String>
+                            <x:String>Golden Lion Tamarin</x:String>
+                            <x:String>Howler Monkey</x:String>
+                            <x:String>Japanese Macaque</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker-->
+                                
+                <!--Label
                     x:Name="LotID"
                     Text="0"
                     
@@ -26,7 +44,7 @@
                     FontAutoScalingEnabled="True"
                     
                     HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
+                    VerticalOptions="Center"/-->
 
                 <Label
                     x:Name="TotalStalls"

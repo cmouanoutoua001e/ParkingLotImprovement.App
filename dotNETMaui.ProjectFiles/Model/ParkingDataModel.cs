@@ -1,8 +1,11 @@
-﻿using System.Text.Json;
+﻿//using GoogleGson;
+//using Java.Net;
+using System.Net.Http;
+using System.Text.Json;
 
 namespace ParkingLotImprovement.Model;
 
-public class ParkingData
+public class ParkingDataModel
 {
     // Public Variables
     public int[] LotIDList { get; set; }
@@ -10,45 +13,87 @@ public class ParkingData
     public int[] OpenStallsList { get; set; }
 }
 
-public class ParkingDataModel : ParkingData
+public class ParkingViewData
 {
-    // Internet Request Variables
-    /* HttpClient httpClient = new();
-    string url = "https://raw.githubusercontent.com/cmouanoutoua001e/ParkingLotImprovement.App/main/ParkingData/ParkingData.json"; */
-
     // Constructor
-    //public ParkingDataModel() {  }
+    public ParkingViewData()
+    {
+        var pdm = JsonSerializer.Deserialize<ParkingDataModel>(json);
+        int n = pdm.LotIDList.Length;
+
+        for (int i = 0; i < n; i++)
+        {
+            if (pdm.TotalStallsList[i] != 0)
+                ValidLotIDList.Add(pdm.LotIDList[i]);
+        }
+    }
+
+    // Variables
+    string json
+    {
+        get
+        {
+            return File.ReadAllText("C:/Users/muasn/Files/4-Coding/0-Temp/ParkingData.json");
+
+            //string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/dotNETMaui/ParkingData/ParkingData.json";
+            //return httpClient.GetStringAsync(url).Result;
+        }
+    }
+
+    public List<int> ValidLotIDList { get; private set; } = new List<int>();
 
 
-    // Data Update Function
-    public string[] UpdateParkingData(int id = 0)
+    // Functions
+    public string[] UpdateParkingData(int lotID = 0)
     {
         string[] labels = Enumerable.Repeat("", 4).ToArray();
-        if (id == 0)
+        if (lotID == 0)
         {
             labels[0] = "-- Select Parking Lot --";
 
             return labels;
         }
-        
-        //string json = httpClient.GetStringAsync(url).Result;
 
-        string json = File.ReadAllText("C:/Users/muasn/Files/4-Coding/0-Temp/ParkingData.json");
-        var newPd = JsonSerializer.Deserialize<ParkingData>(json);
+        var newPd = JsonSerializer.Deserialize<ParkingDataModel>(json);
+        var pdID = BinarySearch(lotID, labels.Length, newPd.LotIDList);
 
-        LotIDList = newPd.LotIDList;
-        TotalStallsList = newPd.TotalStallsList;
-        OpenStallsList = newPd.OpenStallsList;
+        if (pdID == 0)
+        {
+            return labels;
+        }
 
-        labels[0] = "P" + LotIDList[id].ToString();
-        float percent = ((float)TotalStallsList[id] - (float)OpenStallsList[id]) / (float)TotalStallsList[id] * 100;
+        labels[0] = "P" + newPd.LotIDList[pdID].ToString();
+        float percent = ((float)newPd.TotalStallsList[pdID] - (float)newPd.OpenStallsList[pdID]) / (float)newPd.TotalStallsList[pdID] * 100;
         labels[1] = percent.ToString("0") + "% Full";
-        labels[2] = (TotalStallsList[id] == 0)?
+        labels[2] = (newPd.TotalStallsList[pdID] == 0)?
             ("") :
-            ("(" + TotalStallsList[id].ToString() + " Total Stalls)");
-        labels[3] = OpenStallsList[id].ToString();
+            ("(" + newPd.TotalStallsList[pdID].ToString() + " Total Stalls)");
+        labels[3] = newPd.OpenStallsList[pdID].ToString();
 
         return labels;
+    }
+
+    private int BinarySearch(int lotID, int length, int[] lotIDList)
+    {
+        string[] labels = new string[4];
+        int i = length / 2;
+        while (i > 0 && i < length)
+        {
+            if (lotID < lotIDList[i])
+            {
+                i -=  i / 2;
+            }
+            else if (lotID > lotIDList[i])
+            {
+                i += i / 2;
+            }
+            else
+            {
+                return i;
+            }
+        }
+
+        return 0;
     }
 
     /* public string[] UpdateParkingData()
