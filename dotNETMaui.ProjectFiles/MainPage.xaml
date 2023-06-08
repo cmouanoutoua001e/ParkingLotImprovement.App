@@ -18,6 +18,7 @@
 
                 <Label
                     x:Name="LotID"
+                    Text="0"
                     
                     FontFamily="Trebuchet"
                     FontSize="Title"
@@ -143,7 +144,7 @@
 
             <StackLayout HeightRequest="25"/>
 
-            <Border
+            <!--Border
                 Stroke="Black"
                 StrokeThickness="4"
                 WidthRequest="308"
@@ -153,7 +154,7 @@
                     Source="https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/blob/main/ParkingData/space.png?raw=true"
                     MaximumWidthRequest="300"/>
             
-            </Border>
+            </Border-->
 
 
         </StackLayout>

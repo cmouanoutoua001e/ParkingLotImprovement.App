@@ -980,3 +980,5 @@ C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.Projec
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Speech.dll
+C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon.scale-100.jpg
+C:\Users\muasn\Files\4-Coding\dotNET\ParkingLotImprovement.App\dotNETMaui.ProjectFiles\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\splash.scale-100.png

@@ -17,7 +17,7 @@ public partial class MainPage : ContentPage
 
 	private void SetParkingData()
 	{
-		var Labels = pdm.UpdateParkingData();
+		var Labels = pdm.UpdateParkingData(Int32.Parse(LotID.Text));
 		
 		LotID.Text = Labels[0];
 		Status.Text = Labels[1];

@@ -5,28 +5,58 @@ namespace ParkingLotImprovement.Model;
 public class ParkingData
 {
     // Public Variables
-    public int LotID { get; set; }
-    public int TotalStalls { get; set; }
-    public int OpenStalls { get; set; }
+    public int[] LotIDList { get; set; }
+    public int[] TotalStallsList { get; set; }
+    public int[] OpenStallsList { get; set; }
 }
 
 public class ParkingDataModel : ParkingData
 {
     // Internet Request Variables
-    HttpClient httpClient = new();
-    //string url = "https://drive.google.com/file/d/13gV3cvpUyISCspJunlihMcRM3vmwhmyi/view";
-    //string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/main/ParkingData/ParkingData.json";
-    string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/dotNETMaui/ParkingData/ParkingData.json";
+    /* HttpClient httpClient = new();
+    string url = "https://raw.githubusercontent.com/cmouanoutoua001e/ParkingLotImprovement.App/main/ParkingData/ParkingData.json"; */
 
     // Constructor
-    public ParkingDataModel() {  }
+    //public ParkingDataModel() {  }
 
 
     // Data Update Function
-    public string[] UpdateParkingData()
+    public string[] UpdateParkingData(int id = 0)
+    {
+        string[] labels = Enumerable.Repeat("", 4).ToArray();
+        if (id == 0)
+        {
+            labels[0] = "-- Select Parking Lot --";
+
+            return labels;
+        }
+        
+        //string json = httpClient.GetStringAsync(url).Result;
+
+        string json = File.ReadAllText("C:/Users/muasn/Files/4-Coding/0-Temp/ParkingData.json");
+        var newPd = JsonSerializer.Deserialize<ParkingData>(json);
+
+        LotIDList = newPd.LotIDList;
+        TotalStallsList = newPd.TotalStallsList;
+        OpenStallsList = newPd.OpenStallsList;
+
+        labels[0] = "P" + LotIDList[id].ToString();
+        float percent = ((float)TotalStallsList[id] - (float)OpenStallsList[id]) / (float)TotalStallsList[id] * 100;
+        labels[1] = percent.ToString("0") + "% Full";
+        labels[2] = (TotalStallsList[id] == 0)?
+            ("") :
+            ("(" + TotalStallsList[id].ToString() + " Total Stalls)");
+        labels[3] = OpenStallsList[id].ToString();
+
+        return labels;
+    }
+
+    /* public string[] UpdateParkingData()
     {
         string[] labels = new string[4];
-        string json = httpClient.GetStringAsync(url).Result;
+        //string json = httpClient.GetStringAsync(url).Result;
+
+        string json = File.ReadAllText("C:/Users/muasn/Files/4-Coding/0-Temp/ParkingData.json");
         var newPd = JsonSerializer.Deserialize<ParkingData>(json);
 
         LotID = newPd.LotID;
@@ -40,5 +70,5 @@ public class ParkingDataModel : ParkingData
         labels[3] = OpenStalls.ToString();
 
         return labels;
-    }
+    } */
 }
