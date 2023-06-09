@@ -18,14 +18,21 @@ public partial class MainPage : ContentPage
 
 	private void SetLotIDList()
     {
-		foreach (var ID in pvd.ValidLotIDList)
+		foreach (var ID in pvd.ValidLotList)
 			LotID.Items.Add(ID.ToString());
     }
 
 	private void SetParkingData()
 	{
-		LotID.SelectedIndex = (LotID.SelectedIndex == -1) ? 0 : LotID.SelectedIndex;
-		var Labels = pvd.UpdateParkingData(Int32.Parse( LotID.Items[LotID.SelectedIndex] ));
+		bool firstRun = false;
+
+		if (LotID.SelectedIndex == -1)
+		{
+			LotID.SelectedIndex = 0;
+			firstRun = true;
+        }
+
+		var Labels = pvd.UpdateParkingData(pvd.ValidLotIDList[LotID.SelectedIndex]);
 
 		//LotID.Text = Labels[0];
 		Status.Text = Labels[1];
@@ -33,11 +40,12 @@ public partial class MainPage : ContentPage
         OpenStalls.Text = Labels[3];
 
 		ram.Set(Labels);
-		ram.ReadAloud();
+		if (!firstRun)
+			ram.ReadAloud();
     }
 
 
-	private void OnRefreshClicked(object sender, EventArgs e)
+	private void Refresh(object sender, EventArgs e)
 	{
 		SetParkingData();
     }

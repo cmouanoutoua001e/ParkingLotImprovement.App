@@ -11,56 +11,29 @@
     <ScrollView Margin="25">
         <StackLayout>
 
-            <HorizontalStackLayout
-                Spacing="5"
-                HeightRequest="50"
-                HorizontalOptions="Center">
+            <VerticalStackLayout Spacing="5"
+                                 HorizontalOptions="Center">
 
                 <Picker x:Name="LotID"
-                        Title="Select a Parking Lot"/>
+                        Title="Select a Parking Lot"
+                        HorizontalTextAlignment="Center"
+                        FontSize="Subtitle"
+                        FontAutoScalingEnabled="True"
+                        SelectedIndex="0"
+                        SelectedIndexChanged="Refresh"/>
 
-                <!--Picker x:Name="LotID"
-                        Title="Select a Parking Lot">
-                    <Picker.ItemsSource>
-                        <x:Array x:Name="LotIDList" Type="{x:Type x:String}">
-                            <x:String>Baboon</x:String>
-                            <x:String>Capuchin Monkey</x:String>
-                            <x:String>Blue Monkey</x:String>
-                            <x:String>Squirrel Monkey</x:String>
-                            <x:String>Golden Lion Tamarin</x:String>
-                            <x:String>Howler Monkey</x:String>
-                            <x:String>Japanese Macaque</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker-->
-                                
-                <!--Label
-                    x:Name="LotID"
-                    Text="0"
-                    
-                    FontFamily="Trebuchet"
-                    FontSize="Title"
-                    FontAttributes="Bold"
-                    FontAutoScalingEnabled="True"
-                    
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/-->
+                <Label x:Name="TotalStalls"
+                       FontSize="Body"
+                       FontAutoScalingEnabled="True"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       LineHeight="2"/>
 
-                <Label
-                    x:Name="TotalStalls"
-                    
-                    FontSize="Body"
-                    FontAutoScalingEnabled="True"
-                    
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
+            </VerticalStackLayout>
 
-            </HorizontalStackLayout>
-
-            <BoxView 
-                Color="Black"
-                HeightRequest="2"
-                WidthRequest="696"/>
+            <BoxView Color="Black"
+                     HeightRequest="2"
+                     WidthRequest="696"/>
 
             <Grid RowSpacing="10" ColumnSpacing="10">
                 
@@ -156,7 +129,7 @@
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                 
-                    Clicked="OnRefreshClicked"/>
+                    Clicked="Refresh"/>
 
             </Grid>
 
