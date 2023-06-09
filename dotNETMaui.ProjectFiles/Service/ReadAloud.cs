@@ -3,7 +3,7 @@ using System.Speech.Synthesis;
 
 namespace ParkingLotImprovement.App.Service
 {
-    public class ReadAloudModel
+    public class ReadAloudService
     {
         // Public Variables
         public string ToRead { get; set; }
@@ -33,8 +33,5 @@ namespace ParkingLotImprovement.App.Service
             Pitch = 2f,
             Volume = 1f
         };
-
-        // Constructors
-        public ReadAloudModel() { }
     }
 }

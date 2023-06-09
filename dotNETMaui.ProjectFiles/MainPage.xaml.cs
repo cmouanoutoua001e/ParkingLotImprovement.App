@@ -7,7 +7,7 @@ namespace ParkingLotImprovement.App;
 public partial class MainPage : ContentPage
 {
 	ParkingViewData pvd = new();
-    ReadAloudModel ram = new();
+    ReadAloudService ras = new();
 
     public MainPage()
 	{
@@ -34,14 +34,13 @@ public partial class MainPage : ContentPage
 
 		var Labels = pvd.UpdateParkingData(pvd.ValidLotIDList[LotID.SelectedIndex]);
 
-		//LotID.Text = Labels[0];
 		Status.Text = Labels[1];
         TotalStalls.Text = Labels[2];
         OpenStalls.Text = Labels[3];
 
-		ram.Set(Labels);
+		ras.Set(Labels);
 		if (!firstRun)
-			ram.ReadAloud();
+			ras.ReadAloud();
     }
 
 

@@ -38,10 +38,11 @@ public class ParkingViewData
     {
         get
         {
-            return File.ReadAllText("C:/Users/muasn/Files/4-Coding/dotNET/ParkingLotImprovement.App/ParkingData/ParkingData.json");
+            //return File.ReadAllText("C:/Users/muasn/Files/4-Coding/dotNET/ParkingLotImprovement.App/ParkingData/ParkingData.json");
 
-            //string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/dotNETMaui/ParkingData/ParkingData.json";
-            //return httpClient.GetStringAsync(url).Result;
+            var httpClient = new HttpClient();
+            string url = "https://github.com/cmouanoutoua001e/ParkingLotImprovement.App/raw/dotNETMaui/ParkingData/ParkingData.json";
+            return httpClient.GetStringAsync(url).Result;
         }
     }
 
@@ -78,28 +79,5 @@ public class ParkingViewData
         labels[3] = newPd.OpenStallsList[lotID].ToString();
 
         return labels;
-    }
-
-    private int BinarySearch(int lotID, int length, int[] lotIDList)
-    {
-        string[] labels = new string[4];
-        int i = length / 2;
-        while (i > 0 && i < length)
-        {
-            if (lotID < lotIDList[i])
-            {
-                i -=  i / 2;
-            }
-            else if (lotID > lotIDList[i])
-            {
-                i += i / 2;
-            }
-            else
-            {
-                return i;
-            }
-        }
-
-        return 0;
     }
 }
