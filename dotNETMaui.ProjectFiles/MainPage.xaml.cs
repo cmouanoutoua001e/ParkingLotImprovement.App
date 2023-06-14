@@ -39,6 +39,7 @@ public partial class MainPage : ContentPage
         OpenStalls.Text = Labels[3];
 
 		ras.Set(Labels);
+
 		if (!firstRun)
 			ras.ReadAloud();
     }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Maui.Media;
+using System.Globalization;
 using System.Speech.Synthesis;
 
 namespace ParkingLotImprovement.App.Service
@@ -9,10 +10,11 @@ namespace ParkingLotImprovement.App.Service
         public string ToRead { get; set; }
 
         // Public Methods
-        public async void ReadAloud()
+        public void ReadAloud()
         {
-            await TextToSpeech.Default.SpeakAsync(ToRead, options);
+            TextToSpeech.SpeakAsync("Hello there!");
         }
+
         public void Set(string[] labels)
         {
             if (labels[2] == ""){
@@ -21,9 +23,11 @@ namespace ParkingLotImprovement.App.Service
             }
 
             ToRead =
-                labels[0] + " is " + labels[1] + ".  There " +          // 'P21' is '47% Full'.  There 
-                ((labels[3] == "1") ? ("is" + labels[3] + "stall")      // (is '1' stall)
-                : ("are" + labels[3] + "stalls")) + "open.";             // (are '9' stalls) open.
+                labels[0] + " is " + labels[1] + ".  There " +      // 'P21' is '47% Full'.  There 
+                ((labels[3] == "1") ?
+                ("is" + labels[3] + "stall") :                      // (is '1' stall)
+                ("are" + labels[3] + "stalls")) +                   // (are '9' stalls)
+                "open.";                                            // open.
         }
 
 
